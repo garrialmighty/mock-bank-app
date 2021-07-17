@@ -30,6 +30,10 @@ extension LoginViewController: LoginViewModelDelegate {
         print("Hello, \(client.username)!")
         print("Your balance is \(client.balance).")
         
-        // TODO: navigate to main screen
+        usernameTextField.text = nil
+        
+        guard let profileScreen = UIStoryboard(name: "Profile", bundle: nil).instantiateInitialViewController() else { return }
+        
+        navigationController?.pushViewController(profileScreen, animated: true)
     }
 }
