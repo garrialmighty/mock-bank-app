@@ -43,7 +43,9 @@
                             <constraint firstItem="0UP-vz-kpG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t9q-NJ-zF7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="WXg-Z4-z6b"/>
+                    <navigationItem key="navigationItem" id="WXg-Z4-z6b">
+                        <barButtonItem key="backBarButtonItem" title="Logout" id="2uf-VY-hJM"/>
+                    </navigationItem>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="usernameTextField" destination="jKa-Wp-iiz" id="ogk-5F-dJT"/>

@@ -40,3 +40,16 @@ extension ApiService: ProfileFetcher {
         Client()
     }
 }
+
+// MARK: - TopupInterface
+extension ApiService: TopupInterface {
+    func topup(amount: Int) -> Int {
+        0
+    }
+}
+
+// MARK: - PayInterface
+extension ApiService: PayInterface {
+    func pay(amount: Int, to client: Client) {
+    }
+}
