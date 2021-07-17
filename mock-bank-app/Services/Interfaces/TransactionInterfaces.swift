@@ -8,9 +8,9 @@
 import Foundation
 
 protocol TopupInterface {
-    func topup(amount: Int) -> Int
+    func topup(amount: Int)
 }
 
-protocol PayInterface {
-    func pay(amount: Int, to client: Client)
+protocol TransferInterface {
+    func pay(amount: Int, to id: String)
 }

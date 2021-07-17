@@ -26,10 +26,7 @@ class LoginViewController: UIViewController {
 
 // MARK: - LoginViewModelDelegate
 extension LoginViewController: LoginViewModelDelegate {
-    func viewModeln(_ viewModel: LoginViewModelInterface, didLogin client: Client) {
-        print("Hello, \(client.username)!")
-        print("Your balance is \(client.balance).")
-        
+    func viewModel(_ viewModel: LoginViewModelInterface, didLogin client: Client) {
         usernameTextField.text = nil
         
         guard let profileScreen = UIStoryboard(name: "Profile", bundle: nil).instantiateInitialViewController() else { return }

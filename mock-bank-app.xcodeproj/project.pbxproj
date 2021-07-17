@@ -16,18 +16,24 @@
 		6F1B329D26A27C440099B366 /* mock_bank_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B329C26A27C440099B366 /* mock_bank_appTests.swift */; };
 		6F1B32A826A27C440099B366 /* mock_bank_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32A726A27C440099B366 /* mock_bank_appUITests.swift */; };
 		6F1B32B826A280060099B366 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32B726A280060099B366 /* LoginViewModel.swift */; };
-		6F1B32BB26A286670099B366 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BA26A286670099B366 /* ApiService.swift */; };
 		6F1B32BD26A2871D0099B366 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */; };
 		6F1B32C026A2874D0099B366 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BF26A2874D0099B366 /* Client.swift */; };
-		6F1B32C226A2896F0099B366 /* MockServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32C126A2896F0099B366 /* MockServices.swift */; };
+		6F1B32C226A2896F0099B366 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32C126A2896F0099B366 /* UserServices.swift */; };
 		6F1B32C626A2974E0099B366 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32C526A2974E0099B366 /* ProfileViewController.swift */; };
 		6F1B32C826A297680099B366 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32C726A297680099B366 /* ProfileViewModel.swift */; };
 		6F1B32CA26A297730099B366 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B32C926A297730099B366 /* Profile.storyboard */; };
-		6F1B32CC26A29A100099B366 /* ProfileInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32CB26A29A100099B366 /* ProfileInterfaces.swift */; };
+		6F1B32CC26A29A100099B366 /* ClientInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32CB26A29A100099B366 /* ClientInterfaces.swift */; };
 		6F1B32CF26A29FB80099B366 /* TopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32CE26A29FB80099B366 /* TopupViewController.swift */; };
 		6F1B32D126A29FC20099B366 /* TopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32D026A29FC20099B366 /* TopupViewModel.swift */; };
 		6F1B32D326A29FC90099B366 /* Topup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B32D226A29FC90099B366 /* Topup.storyboard */; };
 		6F1B32D526A2AE8D0099B366 /* TransactionInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32D426A2AE8D0099B366 /* TransactionInterfaces.swift */; };
+		6F1B32D826A2BE360099B366 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32D726A2BE360099B366 /* PayViewController.swift */; };
+		6F1B32DA26A2BE600099B366 /* PayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32D926A2BE600099B366 /* PayViewModel.swift */; };
+		6F1B32DC26A2BE660099B366 /* Pay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B32DB26A2BE660099B366 /* Pay.storyboard */; };
+		6F2C7B6826A42B94001FF955 /* CoreServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C7B6726A42B94001FF955 /* CoreServices.swift */; };
+		6F2C7B6A26A436BC001FF955 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C7B6926A436BC001FF955 /* Debt.swift */; };
+		6F86090126A4396A00B9A60D /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090026A4396A00B9A60D /* ClientManager.swift */; };
+		6F86090326A4470600B9A60D /* DebtMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090226A4470600B9A60D /* DebtMediator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,18 +69,24 @@
 		6F1B32A726A27C440099B366 /* mock_bank_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_bank_appUITests.swift; sourceTree = "<group>"; };
 		6F1B32A926A27C440099B366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1B32B726A280060099B366 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		6F1B32BA26A286670099B366 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
 		6F1B32BF26A2874D0099B366 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		6F1B32C126A2896F0099B366 /* MockServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServices.swift; sourceTree = "<group>"; };
+		6F1B32C126A2896F0099B366 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		6F1B32C526A2974E0099B366 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6F1B32C726A297680099B366 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		6F1B32C926A297730099B366 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		6F1B32CB26A29A100099B366 /* ProfileInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInterfaces.swift; sourceTree = "<group>"; };
+		6F1B32CB26A29A100099B366 /* ClientInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientInterfaces.swift; sourceTree = "<group>"; };
 		6F1B32CE26A29FB80099B366 /* TopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewController.swift; sourceTree = "<group>"; };
 		6F1B32D026A29FC20099B366 /* TopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewModel.swift; sourceTree = "<group>"; };
 		6F1B32D226A29FC90099B366 /* Topup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Topup.storyboard; sourceTree = "<group>"; };
 		6F1B32D426A2AE8D0099B366 /* TransactionInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInterfaces.swift; sourceTree = "<group>"; };
+		6F1B32D726A2BE360099B366 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
+		6F1B32D926A2BE600099B366 /* PayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewModel.swift; sourceTree = "<group>"; };
+		6F1B32DB26A2BE660099B366 /* Pay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pay.storyboard; sourceTree = "<group>"; };
+		6F2C7B6726A42B94001FF955 /* CoreServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreServices.swift; sourceTree = "<group>"; };
+		6F2C7B6926A436BC001FF955 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
+		6F86090026A4396A00B9A60D /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
+		6F86090226A4470600B9A60D /* DebtMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtMediator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +139,7 @@
 			children = (
 				6F1B328526A27C420099B366 /* AppDelegate.swift */,
 				6F1B328726A27C420099B366 /* SceneDelegate.swift */,
+				6F8608FF26A4394B00B9A60D /* Common */,
 				6F1B32BE26A2873E0099B366 /* Models */,
 				6F1B32B926A286470099B366 /* Services */,
 				6F1B32B526A27FA10099B366 /* Screens */,
@@ -159,6 +172,7 @@
 		6F1B32B526A27FA10099B366 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				6F1B32D626A2BE1E0099B366 /* Pay */,
 				6F1B32CD26A29F820099B366 /* Topup */,
 				6F1B32C426A297240099B366 /* Profile */,
 				6F1B32B626A27FAB0099B366 /* Login */,
@@ -179,8 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				6F1B32C326A289DA0099B366 /* Interfaces */,
-				6F1B32BA26A286670099B366 /* ApiService.swift */,
-				6F1B32C126A2896F0099B366 /* MockServices.swift */,
+				6F1B32C126A2896F0099B366 /* UserServices.swift */,
+				6F2C7B6726A42B94001FF955 /* CoreServices.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				6F1B32BF26A2874D0099B366 /* Client.swift */,
+				6F2C7B6926A436BC001FF955 /* Debt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,7 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */,
-				6F1B32CB26A29A100099B366 /* ProfileInterfaces.swift */,
+				6F1B32CB26A29A100099B366 /* ClientInterfaces.swift */,
 				6F1B32D426A2AE8D0099B366 /* TransactionInterfaces.swift */,
 			);
 			path = Interfaces;
@@ -221,6 +236,25 @@
 				6F1B32D226A29FC90099B366 /* Topup.storyboard */,
 			);
 			path = Topup;
+			sourceTree = "<group>";
+		};
+		6F1B32D626A2BE1E0099B366 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B32D726A2BE360099B366 /* PayViewController.swift */,
+				6F1B32D926A2BE600099B366 /* PayViewModel.swift */,
+				6F1B32DB26A2BE660099B366 /* Pay.storyboard */,
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		6F8608FF26A4394B00B9A60D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6F86090026A4396A00B9A60D /* ClientManager.swift */,
+				6F86090226A4470600B9A60D /* DebtMediator.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +363,7 @@
 				6F1B329226A27C440099B366 /* LaunchScreen.storyboard in Resources */,
 				6F1B328F26A27C440099B366 /* Assets.xcassets in Resources */,
 				6F1B32CA26A297730099B366 /* Profile.storyboard in Resources */,
+				6F1B32DC26A2BE660099B366 /* Pay.storyboard in Resources */,
 				6F1B328D26A27C420099B366 /* Main.storyboard in Resources */,
 				6F1B32D326A29FC90099B366 /* Topup.storyboard in Resources */,
 			);
@@ -356,15 +391,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1B32B826A280060099B366 /* LoginViewModel.swift in Sources */,
+				6F1B32D826A2BE360099B366 /* PayViewController.swift in Sources */,
 				6F1B32C026A2874D0099B366 /* Client.swift in Sources */,
-				6F1B32BB26A286670099B366 /* ApiService.swift in Sources */,
-				6F1B32C226A2896F0099B366 /* MockServices.swift in Sources */,
+				6F1B32DA26A2BE600099B366 /* PayViewModel.swift in Sources */,
+				6F2C7B6826A42B94001FF955 /* CoreServices.swift in Sources */,
+				6F1B32C226A2896F0099B366 /* UserServices.swift in Sources */,
+				6F86090326A4470600B9A60D /* DebtMediator.swift in Sources */,
+				6F2C7B6A26A436BC001FF955 /* Debt.swift in Sources */,
 				6F1B32C826A297680099B366 /* ProfileViewModel.swift in Sources */,
+				6F86090126A4396A00B9A60D /* ClientManager.swift in Sources */,
 				6F1B328A26A27C420099B366 /* LoginViewController.swift in Sources */,
 				6F1B328626A27C420099B366 /* AppDelegate.swift in Sources */,
 				6F1B32C626A2974E0099B366 /* ProfileViewController.swift in Sources */,
 				6F1B328826A27C420099B366 /* SceneDelegate.swift in Sources */,
-				6F1B32CC26A29A100099B366 /* ProfileInterfaces.swift in Sources */,
+				6F1B32CC26A29A100099B366 /* ClientInterfaces.swift in Sources */,
 				6F1B32D526A2AE8D0099B366 /* TransactionInterfaces.swift in Sources */,
 				6F1B32BD26A2871D0099B366 /* LoginInterfaces.swift in Sources */,
 				6F1B32D126A29FC20099B366 /* TopupViewModel.swift in Sources */,

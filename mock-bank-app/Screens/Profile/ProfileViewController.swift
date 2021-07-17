@@ -30,7 +30,9 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction private func didTapPay() {
-        // TODO: navigate to Pay screen
+        guard let topupScreen = UIStoryboard(name: "Pay", bundle: nil).instantiateInitialViewController() else { return }
+        
+        navigationController?.pushViewController(topupScreen, animated: true)
     }
 }
 

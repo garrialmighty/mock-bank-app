@@ -13,27 +13,18 @@ protocol LoginViewModelInterface {
 }
 
 protocol LoginViewModelDelegate: AnyObject {
-    func viewModeln(_ viewModel: LoginViewModelInterface, didLogin client: Client)
+    func viewModel(_ viewModel: LoginViewModelInterface, didLogin client: Client)
 }
 
 struct LoginViewModel: LoginViewModelInterface {
     
     weak var delegate: LoginViewModelDelegate?
-    private let services: LoginServices = MockServices.shared
+    private let services: Authenticator = UserServices.shared
 
     func login(username: String) {
         let client = Client(username: username)
-        print("> login \(client.username)")
-        do {
-            if services.getRegistrationStatus(for: client) == .registered {
-                services.login(client: client)
-            } else {
-                services.register(client: client)
-            }
-            
-            delegate?.viewModeln(self, didLogin: client)
-        } catch {
-            // TODO: handle errors
-        }
+        print("\n\t> login \(client.username)")
+        services.login(client: client)
+        delegate?.viewModel(self, didLogin: client)
     }
 }

@@ -19,16 +19,11 @@ protocol TopupViewModelDelegate: AnyObject {
 struct TopupViewModel: TopupViewModelInterface {
     
     weak var delegate: TopupViewModelDelegate?
-    private let services: TopupInterface = MockServices.shared
+    private let services: TopupInterface = CoreServices.shared
     
     func topup(amount: Int) {
-        do {
-            print("> topup \(amount)")
-            let updatedAmount = services.topup(amount: amount)
-            print("Your balance is \(updatedAmount).")
-            delegate?.viewModelDidTopup(self)
-        } catch {
-            // TODO: handle errors
-        }
+        print("\n\t> topup \(amount)")
+        services.topup(amount: amount)
+        delegate?.viewModelDidTopup(self)
     }
 }
