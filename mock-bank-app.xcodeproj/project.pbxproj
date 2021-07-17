@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		6F1B328626A27C420099B366 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B328526A27C420099B366 /* AppDelegate.swift */; };
 		6F1B328826A27C420099B366 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B328726A27C420099B366 /* SceneDelegate.swift */; };
-		6F1B328A26A27C420099B366 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B328926A27C420099B366 /* ViewController.swift */; };
+		6F1B328A26A27C420099B366 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B328926A27C420099B366 /* LoginViewController.swift */; };
 		6F1B328D26A27C420099B366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B328B26A27C420099B366 /* Main.storyboard */; };
 		6F1B328F26A27C440099B366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B328E26A27C440099B366 /* Assets.xcassets */; };
 		6F1B329226A27C440099B366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B329026A27C440099B366 /* LaunchScreen.storyboard */; };
 		6F1B329D26A27C440099B366 /* mock_bank_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B329C26A27C440099B366 /* mock_bank_appTests.swift */; };
 		6F1B32A826A27C440099B366 /* mock_bank_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32A726A27C440099B366 /* mock_bank_appUITests.swift */; };
+		6F1B32B826A280060099B366 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32B726A280060099B366 /* LoginViewModel.swift */; };
+		6F1B32BB26A286670099B366 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BA26A286670099B366 /* ApiService.swift */; };
+		6F1B32BD26A2871D0099B366 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */; };
+		6F1B32C026A2874D0099B366 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BF26A2874D0099B366 /* Client.swift */; };
+		6F1B32C226A2896F0099B366 /* MockServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32C126A2896F0099B366 /* MockServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		6F1B328226A27C420099B366 /* mock-bank-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mock-bank-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1B328526A27C420099B366 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F1B328726A27C420099B366 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F1B328926A27C420099B366 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F1B328926A27C420099B366 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6F1B328C26A27C420099B366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F1B328E26A27C440099B366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1B329126A27C440099B366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,11 @@
 		6F1B32A326A27C440099B366 /* mock-bank-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-bank-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1B32A726A27C440099B366 /* mock_bank_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_bank_appUITests.swift; sourceTree = "<group>"; };
 		6F1B32A926A27C440099B366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F1B32B726A280060099B366 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6F1B32BA26A286670099B366 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterfaces.swift; sourceTree = "<group>"; };
+		6F1B32BF26A2874D0099B366 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		6F1B32C126A2896F0099B366 /* MockServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +111,9 @@
 			children = (
 				6F1B328526A27C420099B366 /* AppDelegate.swift */,
 				6F1B328726A27C420099B366 /* SceneDelegate.swift */,
-				6F1B328926A27C420099B366 /* ViewController.swift */,
+				6F1B32BE26A2873E0099B366 /* Models */,
+				6F1B32B926A286470099B366 /* Services */,
+				6F1B32B526A27FA10099B366 /* Screens */,
 				6F1B328B26A27C420099B366 /* Main.storyboard */,
 				6F1B328E26A27C440099B366 /* Assets.xcassets */,
 				6F1B329026A27C440099B366 /* LaunchScreen.storyboard */,
@@ -126,6 +138,49 @@
 				6F1B32A926A27C440099B366 /* Info.plist */,
 			);
 			path = "mock-bank-appUITests";
+			sourceTree = "<group>";
+		};
+		6F1B32B526A27FA10099B366 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B32B626A27FAB0099B366 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6F1B32B626A27FAB0099B366 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B328926A27C420099B366 /* LoginViewController.swift */,
+				6F1B32B726A280060099B366 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6F1B32B926A286470099B366 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B32C326A289DA0099B366 /* Interfaces */,
+				6F1B32BA26A286670099B366 /* ApiService.swift */,
+				6F1B32C126A2896F0099B366 /* MockServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6F1B32BE26A2873E0099B366 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B32BF26A2874D0099B366 /* Client.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F1B32C326A289DA0099B366 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +313,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1B328A26A27C420099B366 /* ViewController.swift in Sources */,
+				6F1B32B826A280060099B366 /* LoginViewModel.swift in Sources */,
+				6F1B32C026A2874D0099B366 /* Client.swift in Sources */,
+				6F1B32BB26A286670099B366 /* ApiService.swift in Sources */,
+				6F1B32C226A2896F0099B366 /* MockServices.swift in Sources */,
+				6F1B328A26A27C420099B366 /* LoginViewController.swift in Sources */,
 				6F1B328626A27C420099B366 /* AppDelegate.swift in Sources */,
 				6F1B328826A27C420099B366 /* SceneDelegate.swift in Sources */,
+				6F1B32BD26A2871D0099B366 /* LoginInterfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
