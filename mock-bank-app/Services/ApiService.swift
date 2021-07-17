@@ -27,9 +27,16 @@ extension ApiService: Authenticator {
 // MARK: - Registrator
 extension ApiService: Registrator {
     func getRegistrationStatus(for client: Client) -> RegistrationStatus {
-        return .registered
+        .registered
     }
     
     func register(client: Client) {
+    }
+}
+
+// MARK: - ProfileFetcher
+extension ApiService: ProfileFetcher {
+    func getProfile() -> Client {
+        Client()
     }
 }
