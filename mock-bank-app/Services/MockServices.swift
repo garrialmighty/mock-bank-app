@@ -36,3 +36,19 @@ extension MockServices: ProfileFetcher {
         mockedLoggedClient
     }
 }
+
+// MARK: - TopupInterface
+extension MockServices: TopupInterface {
+    func topup(amount: Int) -> Int {
+        mockedLoggedClient.balance += amount
+        return mockedLoggedClient.balance
+    }
+}
+
+// MARK: - PayInterface
+extension MockServices: PayInterface {
+    func pay(amount: Int, to client: Client) {
+        mockedLoggedClient.balance -= amount
+        // TODO: update mocked db
+    }
+}

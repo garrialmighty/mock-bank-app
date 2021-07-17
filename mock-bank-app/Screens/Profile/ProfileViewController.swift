@@ -15,13 +15,18 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
         viewModel.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         viewModel.fetchClientProfile()
     }
     
     @IBAction private func didTapTopup() {
-        // TODO: navigate to Topup screen
+        guard let topupScreen = UIStoryboard(name: "Topup", bundle: nil).instantiateInitialViewController() else { return }
+        
+        navigationController?.pushViewController(topupScreen, animated: true)
     }
     
     @IBAction private func didTapPay() {
