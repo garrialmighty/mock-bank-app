@@ -7,8 +7,6 @@
 
 import Foundation
 
-typealias LoginServices = Authenticator & Registrator
-
 enum RegistrationStatus {
     case registered
     case notRegistered
@@ -16,9 +14,4 @@ enum RegistrationStatus {
 
 protocol Authenticator {
     func login(client: Client)
-}
-
-protocol Registrator {
-    func getRegistrationStatus(for client: Client) -> RegistrationStatus
-    func register(client: Client)
 }

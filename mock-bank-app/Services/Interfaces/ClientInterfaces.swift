@@ -11,3 +11,6 @@ protocol ProfileFetcher {
     func getProfile() -> Client
 }
 
+protocol RecipientFetcher {
+    func fetchRecipientClients() -> [Client]
+}

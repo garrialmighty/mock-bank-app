@@ -18,9 +18,9 @@ class TopupViewController: UIViewController {
     }
     
     @IBAction private func didTapTopup() {
-        guard let amountString = amountTextField.text else { return }
+        guard let amountString = amountTextField.text,
+              let amount = Int(amountString) else { return }
         
-        let amount = Int(amountString) ?? 0
         viewModel.topup(amount: amount)
     }
 }
