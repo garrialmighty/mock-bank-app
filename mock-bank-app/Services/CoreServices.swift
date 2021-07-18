@@ -60,7 +60,7 @@ extension CoreServices: TransferInterface {
         var amountToTransfer = amount
         let loggedInClient = ClientManager.shared.loggedInClient
         
-        // todo: fetch from user services
+        // todo: create protocol abstraction from user services
         guard let recipient = UserServices.shared.registeredUsers.first(where: { $0.username == id })
         else { return }
         

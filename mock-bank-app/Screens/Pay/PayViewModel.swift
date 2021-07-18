@@ -25,10 +25,15 @@ protocol PayViewModelDelegate: AnyObject {
 struct PayViewModel: PayViewModelInterface {
     
     weak var delegate: PayViewModelDelegate?
-    private let userServices: RecipientFetcher = UserServices.shared
-    private let coreServices: TransferInterface = CoreServices.shared
+    private let userServices: RecipientFetcher
+    private let coreServices: TransferInterface
     private var clients: [Client] = []
     private var recipientId = ""
+    
+    init(recipientServices: RecipientFetcher, transferServices: TransferInterface) {
+        userServices = recipientServices
+        coreServices = transferServices
+    }
     
     func fetchClients() {
         let recipients = userServices.fetchRecipientClients()

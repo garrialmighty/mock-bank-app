@@ -10,7 +10,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     @IBOutlet private weak var usernameTextField: UITextField!
-    private var viewModel: LoginViewModelInterface = LoginViewModel()
+    private var viewModel: LoginViewModelInterface = LoginViewModel(services: UserServices.shared)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didTapLogin() {
-        // TODO: Toggle login button
+        // todo: toggle login button
         let username = usernameTextField.text ?? ""
         viewModel.login(username: username)
     }

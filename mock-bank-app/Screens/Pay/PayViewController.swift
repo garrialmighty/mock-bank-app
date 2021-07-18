@@ -11,10 +11,10 @@ class PayViewController: UIViewController {
     
     @IBOutlet private weak var recipientLabel: UILabel!
     @IBOutlet private weak var amountTextField: UITextField!
-    private var viewModel: PayViewModelInterface = PayViewModel()
+    private var viewModel: PayViewModelInterface = PayViewModel(recipientServices: UserServices.shared,
+                                                                transferServices: CoreServices.shared)
     
     // todo: allow inputting username
-
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self

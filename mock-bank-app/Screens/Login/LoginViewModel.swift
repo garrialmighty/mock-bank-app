@@ -19,7 +19,11 @@ protocol LoginViewModelDelegate: AnyObject {
 struct LoginViewModel: LoginViewModelInterface {
     
     weak var delegate: LoginViewModelDelegate?
-    private let services: Authenticator = UserServices.shared
+    private let services: Authenticator
+    
+    init(services: Authenticator) {
+        self.services = services
+    }
 
     func login(username: String) {
         let client = Client(username: username)

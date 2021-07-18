@@ -11,7 +11,7 @@ class ProfileViewController: UIViewController {
 
     @IBOutlet private weak var usernameLabel: UILabel!
     @IBOutlet private weak var balanceLabel: UILabel!
-    private var viewModel: ProfileViewModelInterface = ProfileViewModel()
+    private var viewModel: ProfileViewModelInterface = ProfileViewModel(services: UserServices.shared)
     
     override func viewDidLoad() {
         super.viewDidLoad()
