@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="ZHV-vE-NT1">
-                                <rect key="frame" x="20" y="281" width="374" height="334.5"/>
+                                <rect key="frame" x="20" y="194" width="374" height="334.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QTF-0A-32w" userLabel="Recipient Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="60.5"/>
@@ -70,9 +70,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ZHV-vE-NT1" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="3M6-IN-997"/>
                             <constraint firstItem="ZHV-vE-NT1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="SVC-d3-9Am"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZHV-vE-NT1" secondAttribute="trailing" constant="20" id="YaX-9G-nvB"/>
+                            <constraint firstItem="ZHV-vE-NT1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="e2N-Py-lzV"/>
                         </constraints>
                     </view>
                     <connections>

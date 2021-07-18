@@ -35,7 +35,8 @@ final class CoreServices {
     }
     
     private func executeTransfer(amount: Int, to client: Client) {
-        guard let recipient = UserServices.shared.registeredUsers.first(where: { $0 == client })
+        guard amount > 0,
+              let recipient = UserServices.shared.registeredUsers.first(where: { $0 == client })
         else { return }
         
         recipient.balance += amount
@@ -48,8 +49,12 @@ extension CoreServices: TopupInterface {
     func topup(amount: Int) {
         // payoff or reduce debt before topping up amount
         let topupBalance = payDebts(using: amount)
-        ClientManager.shared.loggedInClient.balance += topupBalance
-        ClientManager.shared.displayBalance()
+        
+        if topupBalance > 0 {
+            ClientManager.shared.loggedInClient.balance += topupBalance
+            ClientManager.shared.displayBalance()
+        }
+
         ClientManager.shared.displayDebt()
     }
 }

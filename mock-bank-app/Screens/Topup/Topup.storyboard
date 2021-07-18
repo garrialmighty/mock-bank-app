@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="rZJ-zx-c9T">
-                                <rect key="frame" x="20" y="391" width="374" height="114"/>
+                                <rect key="frame" x="20" y="341" width="374" height="114"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97B-AF-kFk">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -39,7 +39,7 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rZJ-zx-c9T" secondAttribute="trailing" constant="20" id="SMS-p4-Agv"/>
                             <constraint firstItem="rZJ-zx-c9T" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iVt-dt-TeE"/>
-                            <constraint firstItem="rZJ-zx-c9T" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="lIX-FV-GKp"/>
+                            <constraint firstItem="rZJ-zx-c9T" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" constant="-50" id="lIX-FV-GKp"/>
                         </constraints>
                     </view>
                     <connections>
