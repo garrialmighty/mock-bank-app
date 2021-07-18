@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func didTapLogin() {
-        // todo: toggle login button
+        // todo: only enable login button when textfield not empty
         let username = usernameTextField.text ?? ""
         viewModel.login(username: username)
     }

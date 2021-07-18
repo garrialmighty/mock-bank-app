@@ -22,6 +22,7 @@ class PayViewController: UIViewController {
     }
     
     @IBAction private func didTapPay() {
+        // todo: only enable pay button when textfield has valid inputs
         guard let amountString = amountTextField.text,
               let amount = Int(amountString) else { return }
         

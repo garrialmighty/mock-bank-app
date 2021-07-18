@@ -27,6 +27,7 @@ final class CoreServices {
             executeTransfer(amount: transferAmount, to: debt.lender)
             DebtMediator.shared.deductDebt(from: client, to: debt.lender, by: transferAmount)
             
+            // exit from the loop once balance has run out and is unable to pay remaining debt
             guard balance == 0 else { continue }
             break
         }
