@@ -18,6 +18,7 @@ class TopupViewController: UIViewController {
     }
     
     @IBAction private func didTapTopup() {
+        // todo: only enable topup button when textfield has valid inputs
         guard let amountString = amountTextField.text,
               let amount = Int(amountString) else { return }
         
