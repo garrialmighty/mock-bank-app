@@ -19,7 +19,11 @@ protocol TopupViewModelDelegate: AnyObject {
 struct TopupViewModel: TopupViewModelInterface {
     
     weak var delegate: TopupViewModelDelegate?
-    private let services: TopupInterface = CoreServices.shared
+    private let services: TopupInterface
+    
+    init(services: TopupInterface) {
+        self.services = services
+    }
     
     func topup(amount: Int) {
         print("\n\t> topup \(amount)")

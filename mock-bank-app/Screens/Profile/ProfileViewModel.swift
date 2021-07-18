@@ -19,7 +19,11 @@ protocol ProfileViewModelDelegate: AnyObject {
 struct ProfileViewModel: ProfileViewModelInterface {
     
     weak var delegate: ProfileViewModelDelegate?
-    private let services: ProfileFetcher = UserServices.shared
+    private let services: ProfileFetcher
+    
+    init(services: ProfileFetcher) {
+        self.services = services
+    }
     
     func fetchClientProfile() {
         let profile = services.getProfile()

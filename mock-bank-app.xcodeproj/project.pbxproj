@@ -13,7 +13,6 @@
 		6F1B328D26A27C420099B366 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B328B26A27C420099B366 /* Main.storyboard */; };
 		6F1B328F26A27C440099B366 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B328E26A27C440099B366 /* Assets.xcassets */; };
 		6F1B329226A27C440099B366 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1B329026A27C440099B366 /* LaunchScreen.storyboard */; };
-		6F1B329D26A27C440099B366 /* mock_bank_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B329C26A27C440099B366 /* mock_bank_appTests.swift */; };
 		6F1B32A826A27C440099B366 /* mock_bank_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32A726A27C440099B366 /* mock_bank_appUITests.swift */; };
 		6F1B32B826A280060099B366 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32B726A280060099B366 /* LoginViewModel.swift */; };
 		6F1B32BD26A2871D0099B366 /* LoginInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B32BC26A2871D0099B366 /* LoginInterfaces.swift */; };
@@ -34,6 +33,10 @@
 		6F2C7B6A26A436BC001FF955 /* Debt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C7B6926A436BC001FF955 /* Debt.swift */; };
 		6F86090126A4396A00B9A60D /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090026A4396A00B9A60D /* ClientManager.swift */; };
 		6F86090326A4470600B9A60D /* DebtMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090226A4470600B9A60D /* DebtMediator.swift */; };
+		6F86090626A476A400B9A60D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090526A476A400B9A60D /* LoginViewModelTests.swift */; };
+		6F86090826A4793F00B9A60D /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090726A4793F00B9A60D /* ProfileViewModelTests.swift */; };
+		6F86090A26A48E9600B9A60D /* PayViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090926A48E9600B9A60D /* PayViewModelTests.swift */; };
+		6F86090C26A4935700B9A60D /* TopupViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86090B26A4935700B9A60D /* TopupViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +66,6 @@
 		6F1B329126A27C440099B366 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F1B329326A27C440099B366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1B329826A27C440099B366 /* mock-bank-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-bank-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F1B329C26A27C440099B366 /* mock_bank_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_bank_appTests.swift; sourceTree = "<group>"; };
 		6F1B329E26A27C440099B366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1B32A326A27C440099B366 /* mock-bank-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mock-bank-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1B32A726A27C440099B366 /* mock_bank_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mock_bank_appUITests.swift; sourceTree = "<group>"; };
@@ -87,6 +89,10 @@
 		6F2C7B6926A436BC001FF955 /* Debt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debt.swift; sourceTree = "<group>"; };
 		6F86090026A4396A00B9A60D /* ClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientManager.swift; sourceTree = "<group>"; };
 		6F86090226A4470600B9A60D /* DebtMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebtMediator.swift; sourceTree = "<group>"; };
+		6F86090526A476A400B9A60D /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		6F86090726A4793F00B9A60D /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
+		6F86090926A48E9600B9A60D /* PayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewModelTests.swift; sourceTree = "<group>"; };
+		6F86090B26A4935700B9A60D /* TopupViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +160,7 @@
 		6F1B329B26A27C440099B366 /* mock-bank-appTests */ = {
 			isa = PBXGroup;
 			children = (
-				6F1B329C26A27C440099B366 /* mock_bank_appTests.swift */,
+				6F86090426A4764400B9A60D /* Screens */,
 				6F1B329E26A27C440099B366 /* Info.plist */,
 			);
 			path = "mock-bank-appTests";
@@ -257,6 +263,17 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		6F86090426A4764400B9A60D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6F86090526A476A400B9A60D /* LoginViewModelTests.swift */,
+				6F86090726A4793F00B9A60D /* ProfileViewModelTests.swift */,
+				6F86090926A48E9600B9A60D /* PayViewModelTests.swift */,
+				6F86090B26A4935700B9A60D /* TopupViewModelTests.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,6 +344,7 @@
 					};
 					6F1B329726A27C440099B366 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 						TestTargetID = 6F1B328126A27C420099B366;
 					};
 					6F1B32A226A27C440099B366 = {
@@ -416,7 +434,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1B329D26A27C440099B366 /* mock_bank_appTests.swift in Sources */,
+				6F86090A26A48E9600B9A60D /* PayViewModelTests.swift in Sources */,
+				6F86090826A4793F00B9A60D /* ProfileViewModelTests.swift in Sources */,
+				6F86090626A476A400B9A60D /* LoginViewModelTests.swift in Sources */,
+				6F86090C26A4935700B9A60D /* TopupViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +641,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "mock-bank-appTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -630,6 +652,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "garri.mock-bank-appTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mock-bank-app.app/mock-bank-app";
@@ -641,6 +664,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "mock-bank-appTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;

@@ -9,10 +9,7 @@ import Foundation
 
 final class UserServices {
     static let shared = UserServices()
-    var registeredUsers = [
-        Client(username: "Bob", balance: 80),
-        Client(username: "Alice", balance: 100)
-    ]
+    var registeredUsers: [Client] = []
 }
 
 // MARK: - Authenticator

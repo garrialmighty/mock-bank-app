@@ -10,7 +10,7 @@ import UIKit
 class TopupViewController: UIViewController {
 
     @IBOutlet private weak var amountTextField: UITextField!
-    private var viewModel: TopupViewModelInterface = TopupViewModel()
+    private var viewModel: TopupViewModelInterface = TopupViewModel(services: CoreServices.shared)
     
     override func viewDidLoad() {
         super.viewDidLoad()
