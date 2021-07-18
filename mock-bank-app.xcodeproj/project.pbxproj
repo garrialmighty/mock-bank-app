@@ -93,6 +93,7 @@
 		6F86090726A4793F00B9A60D /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelTests.swift; sourceTree = "<group>"; };
 		6F86090926A48E9600B9A60D /* PayViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewModelTests.swift; sourceTree = "<group>"; };
 		6F86090B26A4935700B9A60D /* TopupViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopupViewModelTests.swift; sourceTree = "<group>"; };
+		6F86090D26A49DAC00B9A60D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		6F1B327926A27C420099B366 = {
 			isa = PBXGroup;
 			children = (
+				6F86090D26A49DAC00B9A60D /* README.md */,
 				6F1B328426A27C420099B366 /* mock-bank-app */,
 				6F1B329B26A27C440099B366 /* mock-bank-appTests */,
 				6F1B32A626A27C440099B366 /* mock-bank-appUITests */,
