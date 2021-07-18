@@ -9,43 +9,25 @@ import Foundation
 
 protocol PayViewModelInterface {
     var delegate: PayViewModelDelegate? { get set }
-    func fetchClients()
-    func pay(amount: Int)
-    
-    // Ideally we use a unique id to identify the client
-    // instead of using the username
-    mutating func selectClientRecipient(_ id: String)
+    func pay(amount: Int, id: String)
 }
 
 protocol PayViewModelDelegate: AnyObject {
-    func viewModel(_ viewModel: PayViewModel, didFetch recipients: [String])
     func viewModel(_ viewModel: PayViewModel, didPay client: Client)
 }
 
 struct PayViewModel: PayViewModelInterface {
     
     weak var delegate: PayViewModelDelegate?
-    private let userServices: RecipientFetcher
-    private let coreServices: TransferInterface
+    private let services: TransferInterface
     private var clients: [Client] = []
-    private var recipientId = ""
     
-    init(recipientServices: RecipientFetcher, transferServices: TransferInterface) {
-        userServices = recipientServices
-        coreServices = transferServices
+    init(services: TransferInterface) {
+        self.services = services
     }
     
-    func fetchClients() {
-        let recipients = userServices.fetchRecipientClients()
-        delegate?.viewModel(self, didFetch: recipients.map({ $0.username }))
-    }
-    
-    func pay(amount: Int) {
-        print("\n\t> pay \(recipientId) \(amount)")
-        coreServices.pay(amount: amount, to: recipientId)
-    }
-    
-    mutating func selectClientRecipient(_ id: String) {
-        recipientId = id
+    func pay(amount: Int, id: String) {
+        print("\n\t> pay \(id) \(amount)")
+        services.pay(amount: amount, to: id)
     }
 }

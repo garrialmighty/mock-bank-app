@@ -34,10 +34,3 @@ extension UserServices: ProfileFetcher {
         ClientManager.shared.loggedInClient
     }
 }
-
-// MARK: - RecipientFetcher
-extension UserServices: RecipientFetcher {
-    func fetchRecipientClients() -> [Client] {
-        registeredUsers.filter { $0 != ClientManager.shared.loggedInClient }
-    }
-}
