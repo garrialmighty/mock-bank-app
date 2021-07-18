@@ -7,11 +7,6 @@
 
 import Foundation
 
-enum RegistrationStatus {
-    case registered
-    case notRegistered
-}
-
 protocol Authenticator {
     func login(client: Client)
 }

@@ -9,17 +9,8 @@ import XCTest
 @testable import mock_bank_app
 
 class PayViewModelTests: XCTestCase {
-
-    private final class MockRecipientService: RecipientFetcher {
-        var didFetch  = false
-        
-        func fetchRecipientClients() -> [Client] {
-            didFetch = true
-            return []
-        }
-    }
     
-    private final class MockTransferService: TransferInterface {
+    private final class MockService: TransferInterface {
         var didPay = false
         var amount = -1
         var id = ""
@@ -44,44 +35,26 @@ class PayViewModelTests: XCTestCase {
         }
     }
     
-    private var viewModel = PayViewModel(recipientServices: MockRecipientService(),
-                                         transferServices: MockTransferService())
+    private var viewModel = PayViewModel(services: MockService())
     private var view = MockPayView()
-    private var recipientServices = MockRecipientService()
-    private var transferServices = MockTransferService()
+    private var services = MockService()
     private let mockAmount = 1337
     
     override func setUpWithError() throws {
         view = MockPayView()
-        recipientServices = MockRecipientService()
-        transferServices = MockTransferService()
-        viewModel = PayViewModel(recipientServices: recipientServices,
-                                 transferServices: transferServices)
+        services = MockService()
+        viewModel = PayViewModel(services: services)
         viewModel.delegate = view
     }
 
     override func tearDownWithError() throws {
     }
     
-    func testFetchClients() {
-        viewModel.fetchClients()
-        XCTAssertTrue(recipientServices.didFetch)
-        XCTAssertTrue(view.didFetch)
-    }
-    
     func testPay() {
-        viewModel.pay(amount: mockAmount)
-        XCTAssertTrue(transferServices.didPay)
-        XCTAssertEqual(transferServices.amount, mockAmount)
-    }
-    
-    func testSelectingClientRecipient() {
         let mockedId = "mockedId"
-        viewModel.pay(amount: mockAmount)
-        XCTAssertNotEqual(transferServices.id, mockedId)
-        
-        viewModel.selectClientRecipient(mockedId)
-        viewModel.pay(amount: mockAmount)
-        XCTAssertEqual(transferServices.id, mockedId)
+        viewModel.pay(amount: mockAmount, id: mockedId)
+        XCTAssertTrue(services.didPay)
+        XCTAssertEqual(services.amount, mockAmount)
+        XCTAssertEqual(services.id, mockedId)
     }
 }

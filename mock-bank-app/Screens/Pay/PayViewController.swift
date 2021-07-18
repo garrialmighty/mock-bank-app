@@ -9,41 +9,28 @@ import UIKit
 
 class PayViewController: UIViewController {
     
-    @IBOutlet private weak var recipientLabel: UILabel!
     @IBOutlet private weak var amountTextField: UITextField!
-    private var viewModel: PayViewModelInterface = PayViewModel(recipientServices: UserServices.shared,
-                                                                transferServices: CoreServices.shared)
+    @IBOutlet private weak var idTextField: UITextField!
+    private var viewModel: PayViewModelInterface = PayViewModel(services: CoreServices.shared)
     
-    // todo: allow inputting username
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate = self
-        viewModel.fetchClients()
     }
     
     @IBAction private func didTapPay() {
         // todo: only enable pay button when textfield has valid inputs
-        guard let amountString = amountTextField.text,
+        guard let id = idTextField.text,
+              let amountString = amountTextField.text,
               let amount = Int(amountString) else { return }
         
-        viewModel.pay(amount: amount)
+        viewModel.pay(amount: amount, id: id)
         amountTextField.text = nil
     }
 }
 
 // MARK: - PayViewModelDelegate
 extension PayViewController: PayViewModelDelegate {
-    func viewModel(_ viewModel: PayViewModel, didFetch recipients: [String]) {
-        
-        // Clarify with BA, PO, and designer on how to display list of available pay recipients.
-        guard let recipient = recipients.first else { return }
-        
-        recipientLabel.text =  recipient
-        
-        // For now we just fetch the first available recipient.
-        self.viewModel.selectClientRecipient(recipient)
-    }
-    
     func viewModel(_ viewModel: PayViewModel, didPay client: Client) {
         navigationController?.popViewController(animated: true)
     }
